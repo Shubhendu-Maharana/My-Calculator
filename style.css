@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFBFF;
+}
+
+.container {
+    height: 100%;
+    background-color: transparent;
+}
+
+.container .upper {
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .upper .display {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: black;
+    font-size: 25px;
+    text-align: right;
+    margin-right: 5px;
+    pointer-events: none;
+}
+
+.container .lower {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 8px;
+    background-color: transparent;
+}
+
+.container .lower button {
+    height: 60px;
+    width: 60px;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
+    background-color: #FAF1F6;
+    color: #2A151C;
+}
+
+.container .lower .r1 {
+    background-color: transparent;
+}
+
+.container .lower #AC {
+    background-color: #FFDCC4;
+}
+
+.container .lower .operator {
+    background-color: #FFD9E4;
+}
+
+.container .lower button:active{
+    transform: scale(0.9);
+}
+
+/* Dark Mode*/
+
+.dark-mode {
+    background-color: #201A1C;
+}
+
+.dark-mode .container .upper .display {
+    color: white;
+}
+
+.dark-mode .container .lower button {
+    background-color: #2B2024;
+    color: #FDD9E4;
+}
+
+.dark-mode .container .lower .r1 {
+    background-color: transparent;
+    color: #F9D9E3;
+}
+
+.dark-mode .container .lower #AC {
+    background-color: #623F21;
+    color: #FEDBC3;
+}
+
+.dark-mode .container .lower .operator {
+    background-color: #5A3F48;
+    color: #FED8E4;
+}
+
+.dark-mode .container .lower .eq {
+    background-color: #6F334C;
+}
